@@ -1,0 +1,4 @@
+SELECT name, RestName, dishName, dishPrice from clients, menu, orders , restaurant
+WHERE clients.id = orders.PersonID
+AND restaurant.id = orders.RestaurantID
+AND menu.id = orders.OrderedDishid
